@@ -1,11 +1,14 @@
 == README
 
 新建项目时，命令行：
-> rails new app_name --skip-active-record
+
+<tt>rails new app_name --skip-active-record</tt>
 
 Gemfile:
+
 gem "mongoid", "~> 4.0.0"
 gem 'mongoid-sadstory' #Adds support for multiparameter fields to mongoid 4.x series
 
 生成mongoid的config文件config/mongoid.yml:
-> rails g mongoid:config
+
+<tt>rails g mongoid:config</tt>
