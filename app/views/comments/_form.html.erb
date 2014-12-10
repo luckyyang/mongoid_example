@@ -7,8 +7,8 @@
   </p>
 <% end %>
 
-<%= form_for [@commentable, Comment.new] do |f| %>
+<%= form_for [commentable, Comment.new] do |f| %>
   <%= f.label :content, "内容" %><br>
-  <%= f.text_field :content %>
+  <%= f.text_area :content %>
   <%= f.submit "提交" %>
 <% end %>

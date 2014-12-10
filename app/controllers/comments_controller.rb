@@ -9,10 +9,10 @@ class CommentsController < ApplicationController
     @comment = @commentable.comments.build(comment_params)
     if @comment.save   
       flash[:notice] = "Successfully saved comment."
-      redirect_to :id => nil  
-    else  
+      redirect_to @commentable
+    else
       render :action => 'new'
-    end  
+    end
   end
 
   private
