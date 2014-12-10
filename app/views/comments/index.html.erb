@@ -1,0 +1,14 @@
+<p>Comment:</p>
+
+<% @comments.each do |comment| %>
+  <p>
+    <strong>Content:</strong>
+    <%= comment.content %>
+  </p>
+<% end %>
+
+<%= form_for [@commentable, Comment.new] do |f| %>
+  <%= f.label :content, "内容" %><br>
+  <%= f.text_field :content %>
+  <%= f.submit "提交" %>
+<% end %>
