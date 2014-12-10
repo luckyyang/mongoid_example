@@ -13,3 +13,5 @@ gem 'mongoid-sadstory' #Adds support for multiparameter fields to mongoid 4.x se
 生成mongoid的config文件config/mongoid.yml:
 
 <tt>rails g mongoid:config</tt>
+
+参考mongoid官方安装文档：http://mongoid.org/en/mongoid/docs/installation.html
